@@ -6,20 +6,20 @@
 <html>
 	<head>
 		<meta http-equiv="content-Type" content="text/html" charset="UTF-8" />
-		<title>{% if page.title %}{{ page.title }}{% endif %}{{ site.title }}</title>
+		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 		<meta name="author" content="{{ site.author.name }}" />
 		<meta name="keywords" content="jackieLin的学习小站" />
 		<meta name="description" content="{{ site.description }}" />
-		<link rel="shorcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shorcut icon" href="{{ site.url }}favicon.ico" type="image/x-icon" />
 		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}css/main.css" />
 		<!-- load file to let ie8 support html5 tag -->
-		<script type="text/javascript" src="/js/h5.js"></script>
+		<script type="text/javascript" src="{{ site.url }}js/h5.js"></script>
 	</head>
 	
 	<body>
 		{{ content }}
 	</body>
 	<!-- js -->
-	<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}js/jquery-1.9.1.min.js"></script>
 </html>

@@ -5,10 +5,11 @@ layout:    main
 <section>
 	{% for post in paginator.posts %}
   		<article>
-			<header><a href="#" style="color: rgb(0,0,0);">{{ post.title }}</a></header>
+			<header><a href="{{ post.url }}" class="changecolor">{{ post.title }}</a></header>
 			<!-- <p class="sub_arti">{{ post.date | date_to_string }}</p>
 			<p class="sub_arti">{{ site.author.name }}</p> -->
-			<section>
+			<!-- 设置class来实现正文的标签格式化 -->
+			<section class="entry">
 				{{ post.content }}
 			</section>
 		</article>

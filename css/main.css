@@ -132,7 +132,7 @@ audio, canvas, video {
 }
 
 #container > div > section header {
-	font-size: 2em;
+	font-size: 1.6em;
 	text-align: center;
 	margin-top: 20px;
 	font-weight: bold;
@@ -221,4 +221,41 @@ footer > section a {
 }
 .noborder {
 	border: none !important;
+}
+
+/**  正文部分  **/
+.entry {
+    padding-left: 30px;
+    padding-right: 30px;    
+}
+
+.main_content > section > article > header > a:hover {
+    color: rgb(33, 182, 238);
+    -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,.5)));
+}
+
+.entry h2{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.entry p {
+    line-height: 1.7em;
+    margin-bottom: 25px;
+}
+
+.entry ul {
+    margin-bottom: 20px;
+    list-style-type: disc;
+    margin-left: 50px;
+    line-height: 1.7em;
+}
+
+.entry a {
+    color: #4A75B5;
+}
+
+.entry a:hover {
+    text-decoration: underline;
 }

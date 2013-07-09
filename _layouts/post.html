@@ -8,7 +8,8 @@ layout: main
 			<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor">{{ page.title }}</a>
 			<p class="sub_arti">{{ page.date | date:"%Y-%m-%d" }}</p>
 		</header>
-		<section>
+		<!-- 设置class来实现正文的标签格式化 -->
+		<section class="entry">
 			{{ content }}
 		</section>
 		<p class="sub_arti" class="post">Post by {{ site.author.name }}</p>
