@@ -3,15 +3,16 @@ layout:    main
 ---
 <!-- main content -->
 <section>
-  <article>
-	    {% for post in site.posts %}
+	{% for post in paginator.posts %}
+  		<article>
+			<header><a href="#" style="color: rgb(0,0,0);">{{ post.title }}</a></header>
 			<!-- <p class="sub_arti">{{ post.date | date_to_string }}</p>
 			<p class="sub_arti">{{ site.author.name }}</p> -->
 			<section>
 				{{ post.content }}
 			</section>
-		{% endfor %}
-	</article>	
+		</article>
+	{% endfor %}
 </section>
 <!-- 侧边栏 -->
 <!-- aside part -->
@@ -39,11 +40,25 @@ layout:    main
 		</nav>	
 	</section>
 	<!-- goto old page or new page -->
-	<section class="post">
+	<section class="post noborder">
 		<nav>
 			<ul>
-				<li><a href="#" style="border-right: 1px dashed #DDD6C5;">← Older posts</a></li>
-				<li><a href="#">Newer posts →</a></li>
+				<!-- 分页显示 -->
+				{% if paginator.next_page %}
+					<li><a href="/page{{ paginator.next_page }}">← Older posts</a></li>
+				{% else %}
+					<li><a href="/page{{ paginator.next_page }}" style="visibility: hidden;">← Older posts</a></li>
+				{% endif %}
+				{% if paginator.previous_page %}
+					<!-- 解决page1问题，liquid不会自动生成page1 -->
+					{% if paginator.previous_page == 1 %}
+						<li><a href="/">Newer posts →</a></li>
+					{% else %}
+						<li><a href="/page{{ paginator.previous_page }}">Newer posts →</a></li>
+					{% endif %}
+				{% else %}
+					<li><a href="/page{{ paginator.previous_page }}" style="visibility: hidden;">Newer posts →</a></li>
+				{% endif %}
 			</ul>	
 		<nav>
 	</section>
