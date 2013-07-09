@@ -1,0 +1,216 @@
+html, body, div, h2, h4, header, hgroup, p, nav, ul, ol, li{
+	margin: 0;
+	padding: 0;	
+	border: 0 none;
+	outline: 0 none;
+	font-size: 100%;
+}
+/* set body color*/
+body{
+	/** 采用rgb模式，IE8及以下浏览器可以识别*/
+	background-color: rgb(240, 240, 235);
+	font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+	font-size: 1em;
+}
+
+/* set ul and ol style*/
+ol, ul{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(143, 138, 124);
+}
+/** in order to let IE 6-8 support html5*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+audio, canvas, video { 
+	display: inline-block; *display: inline; *zoom: 1; 
+}
+
+#container{
+	background-color: rgb(235, 233, 226);
+	width: 80%;
+	/*设置阴影*/
+	-webkit-box-shadow: 0 0 8px 4px #DDD;
+	-moz-box-shadow: 0 0 8px 4px #DDD;
+	/* IE<=8不支持此属性 */
+	box-shadow: 0 0 8px 4px #DDD;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;
+	overflow: hidden;
+}	
+#container > header, .header {
+	padding-left: 10px;
+	position: relative;
+	border: 1px dashed #DDD6C5;
+	min-height: 160px;
+}
+
+#container > header > div, .top_left{
+	font-family: 'Josefin Slab',Helvetica,Arial,serif;
+	position: relative;
+	height: auto;
+	font-size: 2em;
+}
+.logo{
+	background: url('../images/heimanba.png') no-repeat scroll 0 0 transparent;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -45px;
+	left: -10px;
+}
+#container > header > div > hgroup > h2, .main_title{
+	margin-top: 40px;
+	margin-left: 150px;
+}
+.title > h4, .sub_title {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 0.6em;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+#container > header > nav, .top_right{
+	position: absolute;
+	right: 100px;
+	bottom: 40px;
+}
+.top_right ul li {
+	font-size: 1.3em;
+	font-weight: bold;
+	float: left;
+	margin-left: 50px;
+}
+
+.top_right ul li > a {
+	width: 100px;
+	height: 30px;
+	display: block;
+	-webkit-transition: background .2s ease-out;
+	-moz-transition: background .2s ease-out;
+}
+
+.img_left {
+	background: url("../images/blog.png") no-repeat -20px -8px;
+}
+
+.img_left:hover {
+	background: url("../images/blog.png") no-repeat -20px -80px;
+}
+
+.img_right {
+	background: url("../images/aboutme.png") no-repeat -5px -8px;
+	width: 120px !important;
+}
+
+.img_right:hover {
+	background: url("../images/aboutme.png") no-repeat -5px -80px;
+}
+
+#container > div {
+	border-bottom: 1px dashed #DDD6C5;
+	border-left: 1px dashed #DDD6C5;
+	border-right: 1px dashed #DDD6C5;
+	overflow: hidden;
+}
+
+#container > div > section {
+	border-right: 1px dashed #DDD6C5;
+	width: 70%;
+	height: auto;
+	display: inline-block;
+}
+
+#container > div > section header {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.sub_arti {
+	font-size: 0.5em;
+	color: #8F8A7C;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+#container > div > aside {
+	width: 29.4%;
+	float: right;
+	overflow: hidden;
+}
+
+#container > div > aside section, .aside_sec{
+	border-bottom: 1px dashed #DDD6C5;
+	text-align: center;
+	overflow: hidden;
+}
+
+.aside_sec > header {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+	color: #555;
+	letter-spacing: 3px;
+}
+
+.aside_sec > nav {
+	margin-bottom: 10px;
+}
+
+.aside_sec a {
+	text-decoration: underline;
+}
+
+.post a {
+	color: #33B5E5;
+	float: left;
+	width: 48%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+footer {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+footer > section {
+	float: left;
+	width: 40%;
+	margin-left: 70px;
+}
+
+footer > section > header {
+	color: #BBB;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #444;
+	margin-bottom: 25px;
+}
+
+footer > section a {
+	color: #5E8DBA;
+	text-decoration: underline;
+}
+
+.changecolor {
+	color: rgb(0,0,0);
+}
+
+.post {
+	text-align: left;
+	font-size: 0.8em;
+}
