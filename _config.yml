@@ -1,1 +1,14 @@
+source: .
+timezone: Asia/Shanghai
+
 baseurl: /forkme
+pygments: true
+permalink: /:title
+
+title: I am what i am
+url: http://jackielin.github.io/forkme/
+
+author:
+    name: jackieLin
+    weibo: http://weibo.com/dashilin
+description: 在路上前行的学习者
