@@ -1,6 +1,7 @@
 source: .
 timezone: Asia/Shanghai
 
+markdown: rdiscount
 baseurl: /forkme
 pygments: true
 permalink: /:title
