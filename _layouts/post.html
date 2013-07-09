@@ -1,0 +1,16 @@
+---
+layout: main
+---
+<!-- 具体文章模块 -->
+<section>
+	<article>
+		<header>
+			<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor">{{ page.title }}</a>
+			<p class="sub_arti">{{ page.date | date:"%Y-%m-%d" }}</p>
+		</header>
+		<section>
+			{{ content }}
+		</section>
+		<p class="sub_arti" class="post">Post by {{ site.author.name }}</p>
+	</article>
+</section>
