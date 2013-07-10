@@ -142,10 +142,15 @@ audio, canvas, video {
 .sub_arti {
 	font-size: 0.5em;
 	color: #8F8A7C;
-	text-align: center;
+	/*text-align: center;*/
 	font-weight: bold;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
+}
+
+.sub_arti span {
+	font-size: 2em;
+	color: black;
 }
 
 #container > div > aside {
@@ -258,4 +263,39 @@ footer > section a {
 
 .entry a:hover {
     text-decoration: underline;
+}
+
+/** 文章边栏处理 **/
+.menulist {
+	position: fixed;
+	top: 30%;
+	right: 11%;
+	height: auto;
+	width: 300px;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	/*text-overflow: ellipsis;*/ 
+}
+
+.menulist a {
+	color: #4A75B5;
+	outline: none;	
+}
+
+.menulist li {
+	margin-bottom: 7px;
+}
+
+.h1 {
+	font-size: 1.3em;
+}
+
+.h2 {
+	font-size: 1em;
+	margin-left: 20px;
+}
+
+.h3 {
+	font-size: 0.8em;
+	margin-left: 30px;
 }

@@ -2,7 +2,7 @@
 layout:    main
 ---
 <!-- main content -->
-<section>
+<section class="articles">
 	{% for post in paginator.posts %}
   		<article>
 			<header><a href="{{ post.url }}" class="changecolor">{{ post.title }}</a></header>

@@ -2,16 +2,25 @@
 layout: main
 ---
 <!-- 具体文章模块 -->
-<section>
+<section class="articles">
 	<article>
 		<header>
-			<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor">{{ page.title }}</a>
+			<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor arti_title">{{ page.title }}</a>
 			<p class="sub_arti">{{ page.date | date:"%Y-%m-%d" }}</p>
 		</header>
 		<!-- 设置class来实现正文的标签格式化 -->
 		<section class="entry">
 			{{ content }}
 		</section>
-		<p class="sub_arti" class="post">Post by {{ site.author.name }}</p>
+		<p class="sub_arti" class="post">  
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .-~~\       <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ _    <br />
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x&nbsp;&nbsp;&nbsp;.-~_)   <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x".-~       <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( /  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span>→ Post by {{ site.author.name }}</span>
+		</p>
 	</article>
 </section>
+
+<script type="text/javascript" src="../js/post.js"></script>
