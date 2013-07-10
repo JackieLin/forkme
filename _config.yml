@@ -2,13 +2,13 @@ source: .
 timezone: Asia/Shanghai
 
 markdown: rdiscount
-baseurl: /forkme
+baseurl: /
 pygments: true
 permalink: /:title
 paginate: 5
 paginate_path: "page:num"
 title: 我就是我，是颜色不一样的烟火
-url: http://jackielin.github.io/forkme/
+url: http://forkme.info
 
 author:
     name: jackieLin
