@@ -128,7 +128,9 @@ audio, canvas, video {
 	display: inline-block;
 }
 #container > div > section > article {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px dashed #DDD6C5;
 }
 
 #container > div > section header {
@@ -137,6 +139,18 @@ audio, canvas, video {
 	margin-top: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
+}
+
+#container > div > section footer {
+	margin: 0 0 0 30px;
+	font-size: 1.3em;
+}
+
+#container > div > section footer a {
+	color: #4A75B5;
+	-webkit-text-shadow: 10px 10px 10px #000;
+	-moz-text-shadow: 10px 10px 20px #000;
+	text-shadow: 10px 10px 20px #000;
 }
 
 .sub_arti {
@@ -187,6 +201,7 @@ audio, canvas, video {
 	width: 48%;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-size: 1.2em;
 }
 
 footer {
@@ -298,4 +313,15 @@ footer > section a {
 .h3 {
 	font-size: 0.8em;
 	margin-left: 30px;
+}
+
+/**----------------------------
+ *      评论模块
+ * ----------------------------*/
+#disqus_thread {
+	width: 64.7%;
+	height: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-right: 1px dashed #DDD6C5;
 }

@@ -5,6 +5,30 @@
  * @thanks beiyuu
  * */
 $(function() {
+	
+	// 加载评论
+    var disqus_shortname = 'jackielin'; 
+    
+	(function() {
+	   var disqus = $('.comment');
+	   // 加上加载中字体。。。。
+	   disqus.html('评论加载中...');
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	   
+	   // 加载完取消字体
+	   dsq.onload = dsq.onreadystatechange = function() {
+			if(!this.readyState || this.readyState === 'loaded' ||　this.readyState === 'complete') {
+				disqus.remove();
+			}
+	   };
+	   
+	   // 添加到body或head中
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	   
+    })();
+
+	/*加载菜单*/
 	var menu = function () {
 		// init
 		var h2 = [], h3 = [], h2index = 0, list = '<aside><nav class="menulist"><ul>';
