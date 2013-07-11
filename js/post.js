@@ -54,8 +54,11 @@ $(function() {
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
 			$('body').animate({scrollTop: scroll - 30}, 400, 'swing');
 		});
-	};	
-
+		
+		$(window).scroll(function() {
+			alert(document.scrollTop());
+		});
+	};
 	// 调用
 	menu();
 });
