@@ -8,7 +8,7 @@
 		var tags = [], dates = [], 
 		// 存放对应日期序号
 		dateSeq = [], dateShow = ['Jan', 'Feb', 'Mar', 'Apirl', 'May', 'June', 'July', 'Aug', 'Sep',
-		'Oct', 'Nov', 'Dec'], tagsSeq = [];
+		'Oct', 'Nov', 'Dec'], tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories');
 		// 赋值
 		tagsSeq['我的生活'] = 0;
 		tagsSeq['美文分享'] = 1;
@@ -43,7 +43,18 @@
 
 			dates[tmpdate].push(mess);
 		});
-		alert(tags.length + "      " + dates.length);
+
+		// 将数据插入
+		var tmpArr = [], tmpdate = null, lis = '';
+		for(var dd in dateSeq) {
+			tmpdate = dd.split('-');
+			str = 'window.open("www.baidu.com")';
+			tmpArr.push('<li><a href="javascript:;" onclick="'+ str + ';">' + dateShow[tmpdate[1] - 1] + ' ' + tmpdate[0] + '(' +  dates[dateSeq[dd]].length + ')' + '</a></li>');
+		}
+		for(var i = tmpArr.length - 1, t; t = tmpArr[i]; i--) {
+			lis += t;
+		}
+		archives.html(lis);
 	};
 	aside();	
 })();
