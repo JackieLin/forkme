@@ -18,10 +18,23 @@ layout:    main
 		</article>
 	{% endfor %}
 </section>
+
+<!-- 遍历所有的文章记录tags，时间 -->
+{% for post in site.posts %}
+	<nav class="type" style="display: none;">
+		<ul class="lists">
+			<li class="atitle">{{ post.title }}</li>
+			<li class="url">{{ post.url }}</li>
+			<li class="tags">{{ post.tags }}</li>
+			<li class="date">{{ post.date | date:"%Y-%m" }}</li>
+		</ul>
+	</nav>
+{% endfor %}
+
 <!-- 侧边栏 -->
 <!-- aside part -->
 <aside>
-	<section class="aside_sec">
+	<section class="aside_sec archives">
 		<header>ARCHIVES</header>
 		<nav>
 			<ul>
@@ -32,11 +45,11 @@ layout:    main
 			</ul>
 		</nav>	
 	</section>	
-	<section class="aside_sec">
+	<section class="aside_sec categories">
 		<header>CATEGORIES</header>
 		<nav>
 			<ul>
-				<li><a href="#">我的生活</a></li>
+				<li><a href="javascript:;" onclick=window.open('http://www.google.com.hk/');>我的生活</a></li>
 				<li><a href="#">美文分享</a></li>
 				<li><a href="#">前端开发</a></li>
 				<li><a href="#">后台开发</a></li>
@@ -67,3 +80,5 @@ layout:    main
 		<nav>
 	</section>
 </aside>
+
+<script type="text/javascript" src="/js/index.js"></script>
