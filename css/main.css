@@ -290,9 +290,9 @@ footer > section a {
 	position: fixed;
 	top: 30%;
 	right: 11%;
-	height: auto;
+	max-height: 450px;
 	width: 300px;
-	overflow: hidden;
+	overflow: scroll;
 	/*white-space: nowrap;*/
 	/*text-overflow: ellipsis;*/ 
 }
@@ -362,4 +362,26 @@ footer > section a {
 
 .seardate {
 	color: #666;
+}
+
+/*------------------------------------
+ *           代码高亮
+ *------------------------------------*/
+pre {
+    font-size: 1.2em;
+    line-height: 25px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+pre code {
+    background-color:transparent;
+    border:none;
+    padding:0;
+    word-wrap:normal;
+}
+
+pre ol {
+    margin-left:25px;
+    list-style-type:decimal;
 }
