@@ -8,7 +8,7 @@ $(function () {
 		var tags = [], dates = [], 
 		// 存放对应日期序号
 		dateSeq = [], dateShow = ['Jan', 'Feb', 'Mar', 'Apirl', 'May', 'June', 'July', 'Aug', 'Sep',
-		'Oct', 'Nov', 'Dec'], tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories > nav > ul');
+		'Oct', 'Nov', 'Dec'], flag = 0, tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories > nav > ul');
 		// 赋值
 		tagsSeq['我的生活'] = 0;
 		tagsSeq['美文分享'] = 1;
@@ -33,7 +33,7 @@ $(function () {
 			}
 			// 封装date
 			if(!dateSeq[date]) {
-				dateSeq[date] = dateSeq.length;
+				dateSeq[date] = flag++;
 			}
 			
 			tmpdate = dateSeq[date];
@@ -51,7 +51,8 @@ $(function () {
 			tmpdate = dd.split('-');
 			search += dateSeq[dd];
 			search += '&type=date"';
-			str = "<li><a href='javascript:;' onclick='window.open(" + search + ");'>" + dateShow[tmpdate[1] - 1] + " " + tmpdate[0] + "(" +  dates[dateSeq[dd]].length + ")" + "</a></li>";
+			str = "<li><a href='javascript:;' onclick='window.open(" + search + ");'>" 
+				+ dateShow[tmpdate[1] - 1] + " " + tmpdate[0] + "(" +  dates[dateSeq[dd]].length + ")" + "</a></li>";
 			tmpArr.push(str);
 		}
 		for(var i = tmpArr.length - 1, t; t = tmpArr[i]; i--) {

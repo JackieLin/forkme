@@ -22,6 +22,11 @@ a {
 	text-decoration: none;
 	color: rgb(143, 138, 124);
 }
+
+blockquote {
+	font-style: italic;
+}
+
 /** in order to let IE 6-8 support html5*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
@@ -236,8 +241,8 @@ footer > section a {
 .post {
 	position: fixed;
 	width: 300px;
-	top: 70%;
 	left: 68%;
+	bottom: 0%;
 }
 .noborder {
 	border: none !important;

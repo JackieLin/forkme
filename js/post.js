@@ -6,6 +6,8 @@
  * */
 $(function() {
 	
+	// 代码高亮
+	$('pre').addClass('prettyprint linenums');
 	// 加载评论
     var disqus_shortname = 'jackielin'; 
     
@@ -78,11 +80,10 @@ $(function() {
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
 			$('body').animate({scrollTop: scroll - 30}, 400, 'swing');
 		});
-		
-		$(window).scroll(function() {
-			alert(document.scrollTop());
-		});
 	};
 	// 调用
-	menu();
+	$.getScript('/js/prettify/prettify.js',function(){
+        prettyPrint();
+        menu();
+    });
 });
