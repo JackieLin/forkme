@@ -3,6 +3,8 @@
  * @content The index page js
  **/
 $(function () {
+	// 代码高亮
+	$('pre').addClass('prettyprint linenums');
 	// tag分类
 	var aside = function() {
 		var tags = [], dates = [], 
