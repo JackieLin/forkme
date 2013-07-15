@@ -76,5 +76,6 @@ $(function () {
 		window.tags = tags;
 		window.dates = dates;
 	};
+	prettyPrint();
 	aside();	
 });

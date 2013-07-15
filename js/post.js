@@ -82,8 +82,7 @@ $(function() {
 		});
 	};
 	// 调用
-	$.getScript('/js/prettify/prettify.js',function(){
-        prettyPrint();
-        menu();
+		prettyPrint();
+		menu();
     });
 });
