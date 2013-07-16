@@ -290,7 +290,7 @@ footer > section a {
 	position: fixed;
 	top: 30%;
 	right: 11%;
-	max-height: 450px;
+	max-height: 500px;
 	width: 300px;
 	overflow: scroll;
 	/*white-space: nowrap;*/

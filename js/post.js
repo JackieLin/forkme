@@ -84,5 +84,4 @@ $(function() {
 	// 调用
 		prettyPrint();
 		menu();
-    });
 });
