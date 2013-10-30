@@ -35,7 +35,7 @@ $(function () {
 			}
 			// 封装date
 			if(!dateSeq[date]) {
-				dateSeq[date] = flag++;
+				dateSeq[date] = ++flag;
 			}
 			
 			tmpdate = dateSeq[date];
@@ -45,7 +45,6 @@ $(function () {
 
 			dates[tmpdate].push(mess);
 		});
-
 		// 将数据插入
 		var tmpArr = [], tmpdate = null, lis = '', search = null, str = null;
 		for(var dd in dateSeq) {

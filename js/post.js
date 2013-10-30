@@ -11,6 +11,11 @@ $(function() {
 	// 加载评论
     var disqus_shortname = 'jackielin'; 
     
+	// 为所有的链接添加target="_blank"属性
+	$('a[href^="http"]').each(function() {
+		$(this).attr('target', '_blank');
+	});
+	
 	(function() {
 	   var disqus = $('.comment');
 	   // 加上加载中字体。。。。
