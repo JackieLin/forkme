@@ -27,6 +27,14 @@ blockquote {
 	font-style: italic;
 }
 
+/** change the pointer style **/
+html {
+	cursor: url("../images/pencil.png"),auto;
+}
+/** To change the color when select the text **/
+*::selection {
+	background: #0099cc;
+}
 /** in order to let IE 6-8 support html5*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
