@@ -3,6 +3,12 @@
  * @content The index page js
  **/
 $(function () {
+
+	// 为所有的链接添加target="_blank"属性
+	$('a[href^="http"]').each(function() {
+		$(this).attr('target', '_blank');
+	});
+	
 	// 代码高亮
 	$('pre').addClass('prettyprint linenums');
 	// tag分类

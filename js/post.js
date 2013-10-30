@@ -38,7 +38,7 @@ $(function() {
 	/*加载菜单*/
 	var menu = function () {
 		// init
-		var h2 = [], h3 = [], h2index = 0, list = '<aside><nav class="menulist"><ul>';
+		var h2 = [], h3 = [], h2index = 0, list = '<aside><nav class="menulist"><ul>', menulist = null;
 		$.each($("h2,h3",$('.articles')), function (index, entry) {
 			/* 处理h2 */
 			if(entry.tagName.toLowerCase() === 'h2') {
@@ -76,12 +76,19 @@ $(function() {
 
 		// 封闭
 		list += '</ul></nav></aside>';
-
+		
+		$('.main_content').append(list);
+		
+		// 获取列表项
+		menulist = $('.menulist');
+		
 		// DOM操作，添加到文件中
 		// 采用事件委托机制来实现事件
-		$('.main_content').append(list).delegate('a', 'click', function (event) {
+		menulist.delegate('a', 'click', function (event) {
 			// 阻止事件冒泡
 			event.preventDefault();
+			console.log(this);
+			console.log($('#' + $(this).attr('data-id')));
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
 			$('body').animate({scrollTop: scroll - 30}, 400, 'swing');
 		});
