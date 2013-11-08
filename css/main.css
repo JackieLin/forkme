@@ -378,6 +378,21 @@ footer > section a {
 .seardate {
 	color: #666;
 }
+/*------------------------------------
+ *           回到顶部样式
+ *------------------------------------*/
+
+img.top {
+	background-image: url(../images/point-up.png);
+	position: fixed;
+	top: 700px;
+	left: 1100px;
+	border: none;   /*避免IE出现边框*/
+}
+
+a.atop > img:hover {
+	opacity: 0.5;
+}
 
 /*------------------------------------
  *           代码高亮

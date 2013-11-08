@@ -9,6 +9,26 @@ $(function () {
 		$(this).attr('target', '_blank');
 	});
 	
+	// 添加跳转到顶部逻辑
+	$('a.atop').bind('click', function() {
+		// 在一定的时间内跳转 The window does not has a scrollbar it belongs the body or the html tag
+		$('body, html').animate({scrollTop: 0}, 800);
+	});
+	
+	var atop = $('a.atop'), elems = $('body, html');
+	
+	// 设置跳转到顶部的显示时间
+	$(window).scroll(function() {
+		var top = elems.scrollTop();
+		if(top > 400) {
+			// 显示返回到顶部
+			atop.css({display: 'block'});
+		} else {
+			// 隐藏显示按钮
+			atop.css({display: 'none'});
+		}
+	});
+	
 	// 代码高亮
 	$('pre').addClass('prettyprint linenums');
 	// tag分类
