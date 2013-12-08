@@ -6,6 +6,7 @@ $(function () {
 
 	// 为所有的链接添加target="_blank"属性
 	$('a[href^="http"]').each(function() {
+		console.log(this);
 		$(this).attr('target', '_blank');
 	});
 	
