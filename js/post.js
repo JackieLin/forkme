@@ -87,8 +87,8 @@ $(function() {
 		menulist.delegate('a', 'click', function (event) {
 			// 阻止事件冒泡
 			event.preventDefault();
-			console.log(this);
-			console.log($('#' + $(this).attr('data-id')));
+			//console.log(this);
+			//console.log($('#' + $(this).attr('data-id')));
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
 			$('body').animate({scrollTop: scroll - 30}, 400, 'swing');
 		});
