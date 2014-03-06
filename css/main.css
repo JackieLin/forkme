@@ -54,10 +54,12 @@ audio, canvas, video {
 	background-color: rgb(235, 233, 226);
 	width: 80%;
 	/*设置阴影*/
-	-webkit-box-shadow: 0 0 8px 4px #DDD;
-	-moz-box-shadow: 0 0 8px 4px #DDD;
+	/**
+	    -webkit-box-shadow: 0 0 8px 4px #DDD;
+	    -moz-box-shadow: 0 0 8px 4px #DDD;
+		box-shadow: 0 0 8px 4px #DDD;           去掉，不然的话会导致浏览器不断重绘
+	**/
 	/* IE<=8不支持此属性 */
-	box-shadow: 0 0 8px 4px #DDD;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
