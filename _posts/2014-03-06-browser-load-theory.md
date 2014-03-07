@@ -1,8 +1,9 @@
 ---
 layout:	post
 title:	浏览器的渲染原理简介
-decription:	《How Browsers Work》经过总结之后作者的一些思想
+description:	<strong>摘要:</strong> 看到这个标题大家一定会想到这篇神文《How Browsers Work》，这篇文章把浏览器的很多细节讲得很细，而且也被翻译成了中文。为什么我还想写一篇呢？因为两个原因，<ul><li>1）这篇文章太长了，阅读成本太大，不能一口气读完。</li><li>2）花了大力气读了这篇文章后可以了解很多，但似乎对工作没什么帮助。</li></ul>所以，我准备写下这篇文章来解决上述两个问题。希望你能在上班途中，或是坐马桶时就能读完，并能从中学会一些能用在工作上的东西......<a href="/browser-load-theory" title="阅读全文">阅读全文</a>
 tags:	美文分享
+excerpt: Browsers Render,Web Performance
 ---
 
 ->转载自[这里][]<-

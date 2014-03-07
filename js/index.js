@@ -34,10 +34,12 @@ $(function () {
 	$('pre').addClass('prettyprint linenums');
 	// tag分类
 	var aside = function() {
-		var tags = [], dates = [], 
+		var tags = [], dates = [], excerpts = [], 
 		// 存放对应日期序号
 		dateSeq = [], dateShow = ['Jan', 'Feb', 'Mar', 'Apirl', 'May', 'June', 'July', 'Aug', 'Sep',
-		'Oct', 'Nov', 'Dec'], flag = 0, tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories > nav > ul');
+		'Oct', 'Nov', 'Dec'], flag = 0, tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories > nav > ul'),
+		origin = window.location.origin;
+
 		// 赋值
 		tagsSeq['我的生活'] = 0;
 		tagsSeq['美文分享'] = 1;
@@ -46,6 +48,7 @@ $(function () {
 		
 		$.each($('.type > .lists'), function(item, entry) {
 			var child = $(entry).children(), tagText = $(child[2]).text(), tmpText = tagText.split(','),
+				excerptText = $(child[4]).text(), excerptTextArr = excerptText.split(','),
 				atitle = $(child[0]).text(), url = $(child[1]).text(), date = $(child[3]).text(),
 				mess = {}, tmpdate = null;
 
@@ -60,6 +63,16 @@ $(function () {
 				}
 				tags[temp].push(mess);
 			}
+
+			// 封装excerpt
+			for(var i = 0, t; t = excerptTextArr[i]; i++) {
+				if(!excerpts[t]) {
+					excerpts[t] = new Array;
+				}
+				
+				excerpts[t].push(mess);
+			}
+
 			// 封装date
 			if(!dateSeq[date]) {
 				dateSeq[date] = ++flag;
@@ -75,7 +88,7 @@ $(function () {
 		// 将数据插入
 		var tmpArr = [], tmpdate = null, lis = '', search = null, str = null;
 		for(var dd in dateSeq) {
-			search = '"search.html#q=';
+			search = '"' + origin + '/search.html#q=';
 			tmpdate = dd.split('-');
 			search += dateSeq[dd];
 			search += '&type=date"';
@@ -91,7 +104,7 @@ $(function () {
 		// catagories数据插入
 		lis = '', num = null, taglen = null, search = null;
 		for(var dd in tagsSeq) {
-			search = '"search.html#q=';
+			search = '"' + origin + '/search.html#q=';
 			taglen = tags[tagsSeq[dd]];
 			num = (taglen) ? "(" + taglen.length + ")" : "(0)";
 			search += tagsSeq[dd];
@@ -100,9 +113,20 @@ $(function () {
 		}
 		categories.html(lis);
 
+		// 添加tags点击事件
+		$('a.tag').click(function(event) {
+			var target = event.currentTarget, content = target.innerText, search = origin + "/search.html#q=";
+			if(content) {
+				search += content;
+				search += "&type=tag";
+				window.open(search);
+			}
+		});
+
 		// 添加到window对象中，给次级页面使用
 		window.tags = tags;
 		window.dates = dates;
+		window.excerpts = excerpts;
 	};
 	prettyPrint();
 	aside();	

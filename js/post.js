@@ -39,7 +39,7 @@ $(function() {
 	var menu = function () {
 		// init
 		var h2 = [], h3 = [], h2index = 0, list = '<aside><nav class="menulist"><ul>', menulist = null;
-		$.each($("h2,h3",$('.articles')), function (index, entry) {
+		$.each($("h2,h3",$('.article')), function (index, entry) {
 			/* 处理h2 */
 			if(entry.tagName.toLowerCase() === 'h2') {
 				var temph2 = {};

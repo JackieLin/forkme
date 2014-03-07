@@ -1,8 +1,9 @@
 ---
 layout:	post
 title:	浏览器重绘和重排
-description:	前端执行交互效果时可能会触发浏览器的重排以及重绘, 造成性能问题
+description:	<strong>摘要:</strong>  重排, 顾名思义就是重新排版的意思; 重绘, 就是浏览器重新绘制。理解重排和重绘的含义十分重要, 因为在评审页面交互效果的时候, 重绘和重排是必须考虑的因素。并不是说交互效果实现了就可以了, 必须同时考虑到这样做会引发什么性能问题。也就是说, 浏览器在进行重绘和重排的时候是要付出高昂的性能代价的......<a href="/browser-repaint-reflow" title="阅读全文">阅读全文</a>
 tags:	前端开发
+excerpt: Browsers Render,Web Performance
 ---
 
 ## 概述

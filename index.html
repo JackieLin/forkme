@@ -13,10 +13,20 @@ layout:    main
 			<p class="sub_arti">{{ site.author.name }}</p> -->
 			<!-- 设置class来实现正文的标签格式化 -->
 			<section class="entry">
-				{{ post.content }}
+				{{ post.description }}
 			</section>
 			<footer>
-				<a href="{{ post.url }}#disqus_thread">查看评论</a>
+				<nav>
+					<span>
+						Tags:    
+					</span>
+					{% assign tags = post.excerpt | split:"," %}
+					
+					{% for tag in tags %}
+						<a class="tag" href="javascript:;" title="{{ tag }}">{{ tag }}</a>&nbsp;&nbsp;
+					{% endfor %}
+				</nav>
+				<a href="{{ post.url }}#disqus_thread" class="comment">Comment</a>
 			</footer>
 		</article>
 	{% endfor %}
@@ -30,6 +40,7 @@ layout:    main
 			<li class="url">{{ post.url }}</li>
 			<li class="tags">{{ post.tags }}</li>
 			<li class="date">{{ post.date | date:"%Y-%m" }}</li>
+			<li class="excerpt">{{ post.excerpt }}</li>
 		</ul>
 	</nav>
 {% endfor %}

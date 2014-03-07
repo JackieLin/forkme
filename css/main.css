@@ -173,29 +173,38 @@ audio, canvas, video {
 	display: inline-block;
 }
 #container > div > section > article {
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	border-bottom: 1px dashed #DDD6C5;
+	overflow: hidden;
 }
 
 #container > div > section header {
-	font-size: 1.6em;
-	text-align: center;
-	margin-top: 20px;
+	/*text-align: center;*/
+	margin: 20px 0 20px 30px;
+	font: 1.6em 'Open Sans',sans-serif;
 	font-weight: bold;
-	margin-bottom: 20px;
 }
 
 #container > div > section footer {
-	margin: 0 0 0 30px;
-	font-size: 1.3em;
+	margin: 20px 0 0 30px;
+	font-size: 1.1em;
+	width: 95%;
+}
+
+#container > div > section footer > nav {
+	float: left;
 }
 
 #container > div > section footer a {
 	color: #4A75B5;
-	-webkit-text-shadow: 10px 10px 10px #000;
+	/* -webkit-text-shadow: 10px 10px 10px #000;
 	-moz-text-shadow: 10px 10px 20px #000;
-	text-shadow: 10px 10px 20px #000;
+	text-shadow: 10px 10px 20px #000; */
+	font-size: 0.9em;
+}
+
+.comment {
+	float: right;
 }
 
 .sub_arti {
@@ -291,7 +300,9 @@ footer > section a {
 /**  正文部分  **/
 .entry {
     padding-left: 30px;
-    padding-right: 30px;    
+    padding-right: 30px;
+    color: #999;
+    line-height: 1.6em;   
 }
 
 .main_content > section > article > header > a:hover {
@@ -439,6 +450,18 @@ pre code {
 pre ol {
     margin-left:25px;
     list-style-type:decimal;
+}
+
+/*-----------------------------------
+ *		文章信息
+ *-----------------------------------*/
+ #container > div > section.article header {
+ 	text-align: center;
+ 	font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+ }
+
+.article .entry {
+	color: #000;
 }
 
 /** 鼠标经过RSS时效果 **/
