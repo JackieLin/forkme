@@ -16,6 +16,14 @@ $(function () {
 		$('body, html').animate({scrollTop: 0}, 800);
 	});
 	
+	// 显示评论次数
+	 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jackielin'; // required: replace example with your forum shortname
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
 	var atop = $('a.atop'), elems = $(document);
 	
 	// 设置跳转到顶部的显示时间
