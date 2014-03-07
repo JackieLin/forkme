@@ -464,6 +464,16 @@ pre ol {
 	color: #000;
 }
 
+/*-----------------------------------
+ *		lisence
+ *-----------------------------------*/
+ .lisence {
+ 	color: #cc0000;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	margin-top: 20px;
+ }
+
 /** 鼠标经过RSS时效果 **/
 @-webkit-keyframes action {
 	25% {
