@@ -15,24 +15,24 @@ $(function() {
 	$('a[href^="http"]').each(function() {
 		$(this).attr('target', '_blank');
 	});
-	
+    
 	(function() {
 	   var disqus = $('.comment');
 	   // 加上加载中字体。。。。
 	   disqus.html('评论加载中...');
        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	   
+
 	   // 加载完取消字体
 	   dsq.onload = dsq.onreadystatechange = function() {
 			if(!this.readyState || this.readyState === 'loaded' ||　this.readyState === 'complete') {
 				disqus.remove();
 			}
 	   };
-	   
+
 	   // 添加到body或head中
        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	   
+
     })();
 
 	/*加载菜单*/
@@ -87,10 +87,11 @@ $(function() {
 		menulist.delegate('a', 'click', function (event) {
 			// 阻止事件冒泡
 			event.preventDefault();
-			//console.log(this);
-			//console.log($('#' + $(this).attr('data-id')));
+			console.log(this);
+			console.log($('#' + $(this).attr('data-id')));
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
-			$('body').animate({scrollTop: scroll - 30}, 400, 'swing');
+			console.log(scroll);
+			$('body,html').animate({scrollTop: scroll - 30}, 400, 'swing');
 		});
 	};
 	// 调用
