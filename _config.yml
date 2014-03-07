@@ -8,7 +8,7 @@ permalink: /:title
 feed: /atom.xml
 paginate: 5
 paginate_path: "page:num"
-title: 我就是我，是颜色不一样的烟火
+title: JackieLin’s blog
 
 url: http://forkme.info
 
