@@ -16,7 +16,7 @@ $(function () {
 		$('body, html').animate({scrollTop: 0}, 800);
 	});
 	
-	var atop = $('a.atop'), elems = $('body, html');
+	var atop = $('a.atop'), elems = $(document);
 	
 	// 设置跳转到顶部的显示时间
 	$(window).scroll(function() {
