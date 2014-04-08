@@ -68,14 +68,14 @@ audio, canvas, video {
 	padding: 10px;
 	overflow: hidden;
 }	
-#container > header, .header {
+.header {
 	padding-left: 10px;
 	position: relative;
 	border: 1px dashed #DDD6C5;
 	min-height: 160px;
 }
 
-#container > header > div, .top_left{
+#container header, .top_left{
 	font-family: 'Josefin Slab',Helvetica,Arial,serif;
 	position: relative;
 	height: auto;
@@ -99,7 +99,7 @@ audio, canvas, video {
 	margin-top: 10px;
 	margin-left: 150px;
 }
-#container > header > nav, .top_right{
+.top_right{
 	position: absolute;
 	right: 0px;
 	bottom: 40px;
