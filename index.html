@@ -3,7 +3,7 @@ layout:    main
 ---
 <!-- main content -->
 <!-- 添加样式为了兼容IE7-->
-<section class="articles" style="float: left;">
+<section class="articles">
 	{% for post in paginator.posts %}
   		<article>
 		<header><a href="{{ site.url }}{{ post.url }}" class="changecolor">{{ post.title }}</a></header>
@@ -32,7 +32,7 @@ layout:    main
 
 <!-- 遍历所有的文章记录tags，时间 -->
 {% for post in site.posts %}
-	<nav class="type" style="display: none;">
+	<nav class="type">
 		<ul class="lists">
 			<li class="atitle">{{ post.title }}</li>
 			<li class="url">{{ post.url }}</li>
@@ -50,6 +50,7 @@ layout:    main
 		<header>ARCHIVES</header>
 		<nav>
 			<ul>
+			    <li></li>
 			</ul>
 		</nav>	
 	</section>	
@@ -57,6 +58,7 @@ layout:    main
 		<header>CATEGORIES</header>
 		<nav>
 			<ul>
+				<li></li>
 			</ul>
 		</nav>	
 	</section>

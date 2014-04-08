@@ -429,6 +429,9 @@ footer > div a {
 /*------------------------------------
  *           回到顶部样式
  *------------------------------------*/
+a.atop {
+	display: none;
+}
 
 img.top {
 	background-image: url(../images/point-up.png);
@@ -476,6 +479,14 @@ pre ol {
 	color: #000;
 }
 
+.articles {
+	float: left;
+}
+
+nav.type {
+	display: none;
+}
+
 /*-----------------------------------
  *		lisence
  *-----------------------------------*/
@@ -485,6 +496,16 @@ pre ol {
  	text-align: center;
  	margin-top: 20px;
  }
+
+/*-----------------------------------
+ *		fork图片样式
+ *-----------------------------------*/
+.fork {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
 
 /** 鼠标经过RSS时效果 **/
 @-webkit-keyframes action {
