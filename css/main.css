@@ -9,8 +9,9 @@ html, body, div, h1, h2, h4, header, p, nav, ul, ol, li{
 body{
 	/** 采用rgb模式，IE8及以下浏览器可以识别*/
 	background-color: rgb(240, 240, 235);
-	font-family: "微软雅黑","Arial","Helvetica","sans-serif";
-	font-size: 1em;
+	color: rgb(0, 0, 37);
+	font-family: "微软雅黑","Arial","Helvetica",sans-serif;
+	/* font-size: 1em; */
 }
 
 /* set ul and ol style*/
@@ -21,6 +22,7 @@ ol, ul{
 a {
 	text-decoration: none;
 	color: rgb(143, 138, 124);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 blockquote {
@@ -47,12 +49,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	display: block;
 }
 audio, canvas, video { 
-	display: inline-block; *display: inline; *zoom: 1; 
+	display: inline-block; 
+	/* *display: inline;  */
+	/*zoom: 1;  */
+	height: 1%;
 }
 
 #container{
 	background-color: rgb(235, 233, 226);
 	width: 80%;
+	color: rgb(0, 0, 37);
 	/*设置阴影*/
 	/**
 	    -webkit-box-shadow: 0 0 8px 4px #DDD;
@@ -88,6 +94,7 @@ audio, canvas, video {
 	position: absolute;
 	top: -45px;
 	left: -10px;
+	color: rgb(0, 0, 37);
 }
 #container > header > div > hgroup > h2, .main_title{
 	margin-top: 40px;
@@ -105,6 +112,7 @@ audio, canvas, video {
 	bottom: 40px;
 	height: 70px;
 	background: url('../images/getRss.png') no-repeat right 0 transparent;
+	color: rgb(0, 0, 37);
 }
 
 .rss {
@@ -197,6 +205,7 @@ audio, canvas, video {
 
 #container > div > section footer a {
 	color: #4A75B5;
+	background-color: rgba(0, 0, 0, 0);
 	/* -webkit-text-shadow: 10px 10px 10px #000;
 	-moz-text-shadow: 10px 10px 20px #000;
 	text-shadow: 10px 10px 20px #000; */
@@ -210,6 +219,7 @@ audio, canvas, video {
 .sub_arti {
 	font-size: 0.5em;
 	color: #8F8A7C;
+	background-color: rgba(0, 0, 0, 0);
 	/*text-align: center;*/
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -239,6 +249,7 @@ audio, canvas, video {
 	font-size: 1.3em;
 	color: #555;
 	letter-spacing: 3px;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .aside_sec > nav {
@@ -251,6 +262,7 @@ audio, canvas, video {
 
 .post a {
 	color: #33B5E5;
+	background-color: rgba(0, 0, 0, 0);
 	float: left;
 	width: 48%;
 	padding-top: 15px;
@@ -272,6 +284,7 @@ footer > div {
 
 footer > div > h1 {
 	color: #BBB;
+	background-color: rgba(0, 0, 0, 0);
 	font-size: 1.5em;
 	padding-bottom: 20px;
 	border-bottom: 2px solid #444;
@@ -282,10 +295,12 @@ footer > div > h1 {
 footer > div a {
 	color: #5E8DBA;
 	text-decoration: underline;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .changecolor {
 	color: rgb(0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .post {
@@ -314,6 +329,7 @@ footer > div a {
     padding-left: 30px;
     padding-right: 30px;
     color: #999;
+    background-color: rgba(0, 0, 0, 0);
     line-height: 1.6em;   
 }
 
@@ -342,6 +358,7 @@ footer > div a {
 
 .entry a {
     color: #4A75B5;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .entry a:hover {
@@ -362,6 +379,7 @@ footer > div a {
 
 .menulist a {
 	color: #4A75B5;
+	background-color: rgba(0, 0, 0, 0);
 	outline: none;	
 }
 
@@ -410,21 +428,25 @@ footer > div a {
 
 .search > ul > li a {
 	color: #12C;
+	background-color: rgba(0, 0, 0, 0);
 	font-size: 1.5em;	
 	text-decoration: underline;
 }
 
 .search > ul > li a:hover {
  	color: rgb(33, 182, 238);
+ 	background-color: rgba(0, 0, 0, 0);
 	-webkit-mask-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,.5)));	
 }
 
 .searurl {
 	color: #093;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .seardate {
 	color: #666;
+	background-color: rgba(0, 0, 0, 0);
 }
 /*------------------------------------
  *           回到顶部样式
@@ -456,6 +478,7 @@ pre {
 }
 
 pre code {
+	color: rgb(0, 0, 37);
     background-color:transparent;
     border:none;
     padding:0;
@@ -472,11 +495,12 @@ pre ol {
  *-----------------------------------*/
  #container > div > section.article header {
  	text-align: center;
- 	font-family: "微软雅黑","Arial","Helvetica","sans-serif";
+ 	font-family: "微软雅黑","Arial","Helvetica",sans-serif;
  }
 
 .article .entry {
 	color: #000;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .articles {
@@ -492,6 +516,7 @@ nav.type {
  *-----------------------------------*/
  .lisence {
  	color: #cc0000;
+ 	background-color: rgba(0, 0, 0, 0);
  	font-weight: bold;
  	text-align: center;
  	margin-top: 20px;
