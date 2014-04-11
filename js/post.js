@@ -6,6 +6,9 @@
  * */
 $(function() {
 	
+	// 采用gist方式显示代码去掉滚动条
+	$('pre.line-pre').css('overflow-x', 'hidden');
+
 	// 代码高亮
 	$('pre').addClass('prettyprint linenums');
 	// 加载评论

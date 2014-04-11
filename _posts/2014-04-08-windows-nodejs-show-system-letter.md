@@ -55,10 +55,11 @@ excerpt:	node.js windows盘符
 这种解决方法最大的缺点就是我们必须自己通过键盘输入来停止与命令的交互。那有没有不用让用户进行直接操控, 执行完命令就自动退出的方法呢？答案是有的。那就是使用node.js exec方法返回的[Child Process][]对象, 调用**end**方法停止与用户的交互, 同时监听对象的close事件来处理返回的信息。示例代码如下:
 
 	var exec = require('child_process').exec;
-
+ 
 	// show  Windows letter, to compatible Windows xp
+ 
 	function showLetter(callback) {
-		var wmicResult;
+	    var wmicResult;
 	    var command = exec('wmic logicaldisk get caption', function(err, stdout, stderr) {
 	        if(err || stderr) {
 	            console.log("root path open failed" + err + stderr);
@@ -66,15 +67,14 @@ excerpt:	node.js windows盘符
 	        }
 	        wmicResult = stdout;
 	    });
-
-    	command.stdin.end();   // stop the input pipe, in order to run in windows xp
-
-    	command.on('close', function(code) {
+	    command.stdin.end();   // stop the input pipe, in order to run in windows xp
+	    command.on('close', function(code) {
 	        console.log("wmic close:: code:" + code);
 	        var data = wmicResult.split('\n'), result = {};
 	        callback(result);
-    	});
+	    });
 	}
+	 
 	/**
 	 *  output:
 	 *  Caption
