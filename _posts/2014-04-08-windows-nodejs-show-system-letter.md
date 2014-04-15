@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows平台下如何使用node.js显示系统盘符
-description:	<strong>node.js</strong>上大部分API说明使用的例子都是基于Linux或者Mac os系统, 对Windows系统叙述比较少(当然, 因为node.js兼容所有平台, 所以这一点其实也无伤大雅)。但是, 如果应用涉及到调用系统命令行来完成一些功能, 兼容Windows就会是比较痛苦的一件事了, 最近就遇到了一个问题, 在Windows平台上怎么显示系统盘符呢？这个问题如果在Linux系统和Mac os 系统下是很容易解决的, 直接使用node.js调用cd / | ls -al命令显示就可以了, 但是在Windows平台上这个问题讨论得就比较少了。下面就来说说这个问题在Windows平台下的解决方式......
+description:	<strong>node.js</strong>上大部分API说明使用的例子都是基于Linux或者Mac os系统, 对Windows系统叙述比较少(当然, 因为node.js兼容所有平台, 所以这一点其实也无伤大雅)。但是, 如果应用涉及到调用系统命令行来完成一些功能, 兼容Windows就会是比较痛苦的一件事了, 最近就遇到了一个问题, 在Windows平台上怎么显示系统盘符呢？这个问题如果在Linux系统和Mac os 系统下是很容易解决的, 直接使用node.js调用cd / | ls -al命令显示就可以了, 但是在Windows平台上这个问题讨论得就比较少了。下面就来说说这个问题在Windows平台下的解决方式......<a href="/windows-nodejs-show-system-letter" title="阅读全文">阅读全文</a>
 tags:	前端开发
 excerpt:	node.js windows盘符
 ---

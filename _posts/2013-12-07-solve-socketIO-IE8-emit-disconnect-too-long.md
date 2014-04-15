@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 解决Socket.IO在IE8下触发disconnect时间过长
-description: <strong>摘要:</strong> Node.js是一个是一个构建在Chrome's JavaScript runtime上的应用程序。能够容易的建立起快速, 可扩展性的应用。Node.js采用事件驱动, 无阻塞I/O模型来保证其轻量性和有效性。对于Javascript语言来说, Node.js的出现具有相当重要的意义。它意味着Javascript不再是传统意义上只能用于前端开发的语言, Javascript同时也能用于WEB后端程序的开发。Node.js相当于一座桥梁, 通过它可以打通前端与后端开发, 现在通过使用Javascript就能实现功能完备的网站。在实现聊天应用是发现一个问题:<br /><strong>在IE8浏览器下聊天窗口关闭一分钟时才触发服务端的disconnect事件。这让聊天应用的实时性大打折扣。</strong><a href="/github-pages" title="阅读全文">阅读全文</a>
+description: <strong>摘要:</strong> Node.js是一个是一个构建在Chrome's JavaScript runtime上的应用程序。能够容易的建立起快速, 可扩展性的应用。Node.js采用事件驱动, 无阻塞I/O模型来保证其轻量性和有效性。对于Javascript语言来说, Node.js的出现具有相当重要的意义。它意味着Javascript不再是传统意义上只能用于前端开发的语言, Javascript同时也能用于WEB后端程序的开发。Node.js相当于一座桥梁, 通过它可以打通前端与后端开发, 现在通过使用Javascript就能实现功能完备的网站。在实现聊天应用是发现一个问题:<br /><strong>在IE8浏览器下聊天窗口关闭一分钟时才触发服务端的disconnect事件。这让聊天应用的实时性大打折扣。</strong><a href="/solve-socketIO-IE8-emit-disconnect-too-long" title="阅读全文">阅读全文</a>
 tags: 后台开发
 excerpt: IE8,Node.js
 ---
