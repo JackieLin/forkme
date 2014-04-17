@@ -96,21 +96,60 @@ audio, canvas, video {
 	left: -10px;
 	color: rgb(0, 0, 37);
 }
+
 #container > header > div > hgroup > h2, .main_title{
 	margin-top: 40px;
 	margin-left: 150px;
 }
+
 .title > h4, .sub_title {
 	font-family: Georgia,"Times New Roman",Times,serif;
 	font-size: 0.6em;
 	margin-top: 10px;
 	margin-left: 150px;
 }
+/** 首页样式兼容 **/
+@media screen and (max-width:959px){
+	#container {
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.logo {
+		position: static;
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		height: 90px;
+		-webkit-background-size: 80%;
+		-moz-background-size: 80%;
+		-o-background-size: 80%;
+		background-size: 80%;  /*To mininal logo*/
+	}
+	.main_title {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.top_left > h2 {
+		font-size: 0.7em;
+		margin: 0 auto;
+		display: table;
+	}
+
+	.title > h4, .sub_title {
+		margin: 0 auto;
+		display: table;
+		font-size: 0.4em;
+	}
+}
+
 .top_right{
 	position: absolute;
 	right: 0px;
 	bottom: 40px;
-	height: 70px;
+	/* height: 70px; */
 	background: url('../images/getRss.png') no-repeat right 0 transparent;
 	color: rgb(0, 0, 37);
 }
@@ -167,6 +206,78 @@ audio, canvas, video {
 	background: url("../images/aboutme.png") no-repeat -5px -80px;
 }
 
+/**
+ *  导航栏图标信息 use: http://getbootstrap.com/;
+ */
+.navbar-toggle {
+	margin: 0 auto;
+	margin-top: 10px;
+	display: none;
+	position: relative;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.menu {
+	display: inline-block;
+	background-color: #ada588;
+	border: 1px solid #cdbfe3;
+	color: #fff;
+	border-radius: 4px;
+	padding: 10px 30px;
+}
+
+/**
+ *  移动端右边栏
+ */
+.mobie-top-ul {
+	display: none;
+}
+
+ul.mobie-top-ul  li{
+	font-weight: normal;
+	margin: 5px;
+	padding: 0;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+ul.mobie-top-ul li a {
+	display: inline;
+}
+
+ul.mobie-top-ul li a:hover {
+	text-decoration: underline;
+}
+
+/**
+ *  媒体查询时显示导航栏
+ */
+@media screen and (max-width:959px) {
+	.top_right {
+		position: static;
+	}
+
+	.navbar-toggle {
+		display: block;
+	}
+
+	.top_right ul li {
+		float: none;
+	}
+
+	.pc_top_ul {
+			display: none;
+	}
+
+	.mobie-top-ul {
+		display: block;
+	}
+}
+
 #container > div {
 	border-bottom: 1px dashed #DDD6C5;
 	border-left: 1px dashed #DDD6C5;
@@ -200,6 +311,7 @@ audio, canvas, video {
 }
 
 #container > div > section footer > nav {
+	width: 70%;
 	float: left;
 }
 
@@ -260,6 +372,30 @@ audio, canvas, video {
 	text-decoration: underline;
 }
 
+/**
+ *  移动端container
+ */
+@media screen and (max-width:959px) {
+	#container > div > section {
+		width: 100%;
+	}
+	
+	#container > div > aside {
+		display: none;
+	}
+
+	#container > div > section header {
+		font-size: 0.9em;
+		font-weight: bold;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+	#container > div > section footer {
+		width: 86%;
+		font-size: 0.8em;
+	}
+}
+
 .post a {
 	color: #33B5E5;
 	background-color: rgba(0, 0, 0, 0);
@@ -298,6 +434,15 @@ footer > div a {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+/**
+ * footer 部分
+ */
+@media screen and (max-width:959px) {
+	body > footer {
+		display: none;
+	}	
+}
+
 .changecolor {
 	color: rgb(0,0,0);
 	background-color: rgba(0, 0, 0, 0);
@@ -331,6 +476,19 @@ footer > div a {
     color: #999;
     background-color: rgba(0, 0, 0, 0);
     line-height: 1.6em;   
+}
+
+.entry img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width:959px) {
+	.entry {
+		font-size: 0.7em;
+		color: #000;
+		line-height: 1.8em;
+	}
 }
 
 .main_content > section > article > header > a:hover {
@@ -525,11 +683,18 @@ nav.type {
 /*-----------------------------------
  *		fork图片样式
  *-----------------------------------*/
-.fork {
+
+.fork img {
 	position: absolute;
 	top: 0;
 	right: 0;
 	border: 0;
+}
+
+@media screen and (max-width:959px){
+	.fork {
+		display: none;
+	}
 }
 
 /** 鼠标经过RSS时效果 **/
