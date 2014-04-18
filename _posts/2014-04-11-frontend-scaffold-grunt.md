@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 构建工具系列二--Grunt
-description: <strong>摘要:</strong> 最近一段时间，随着数据的不停累积，之前的oracle数据库所在的硬盘已经不能容纳越来越多的数据以及日志信息。发生这种情况的原因是安装时对数据库的大小估算不够(⊙﹏⊙b汗)。既然出了这种问题就要想方法解决。最后的做法其实就是最简单的想法，将oracle数据库迁移到更大的硬盘就行了呗！确实如此。但所谓知易行难，真正实施起来的时候才发现迁移过程中出现了很多问题。以下文章就是记录我在迁移过程中遇到的各种问题以及解决办法。<a href="/github-pages" title="阅读全文">阅读全文</a>
+description: <strong>摘要:</strong> 最近在做Toki项目时遇到一个苦逼问题, 就是每次调试的时候需要将Javascript和css同时压缩(因为发布的成品代码是经过压缩的)。寻寻觅觅, 终于让我找到一款前端构建神器--Grunt。Grunt是什么呢？Grunt实际上是一个Javascript任务运行框架......<a href="/frontend-scaffold-grunt/" title="阅读全文">阅读全文</a>
 tags: 前端开发
 excerpt: node.js grunt
 ---
