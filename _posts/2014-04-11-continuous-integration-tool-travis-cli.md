@@ -12,6 +12,8 @@ excerpt: github Travis-cli
 
 Travis-cli不同于以前的持续集成工具, 它采用[YAML][]格式来声明(ps: 本博客使用的是[Github page][], 也是采用YAML格式配置的, [传送门][]), 同时支持C, C++, Clojure, Erlang, Go, Groovy, Haskell, Java, JavaScript, Perl, PHP, Python, Ruby和Scala语言。
 
+插播: [构建工具系列二--Grunt](/frontend-scaffold-grunt/)
+
 ## 用途
 那么, **Travis-cli**作为一个工具究竟在使用在什么应用场合呢？一般来说会在两种情况下使用：一是项目的自动测试; 而是项目的自动构建。我们知道, 在Github上协作开发过程中可能会遇到很多不认识的人或组织通过[pull request][]向我们提交代码或者是多人进行项目开发协作。在这种情况下如何保证代码风格的一致性和代码的正确性就显得十分重要。使用Travis-cli就能很好的解决以上问题。通过预先编写的代码风格检查工具和项目构建工具并将之集成到Travis-cli上, 每次提交代码时Travis-cli就会自动进行构建并对构建结果作出提示, 从而帮助我们检查代码可能存在的问题。
 
