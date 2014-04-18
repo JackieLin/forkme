@@ -212,7 +212,7 @@ audio, canvas, video {
 .navbar-toggle {
 	margin: 0 auto;
 	margin-top: 10px;
-	margin-left: 32%;    /**兼容UC浏览器**/
+	width: 100%;    /**兼容UC浏览器**/
 	display: none;
 	position: relative;
 	background-color: transparent;
