@@ -260,6 +260,7 @@ ul.mobie-top-ul li a:hover {
 @media screen and (max-width:959px) {
 	.top_right {
 		position: static;
+		background: transparent;
 	}
 
 	.navbar-toggle {
@@ -707,6 +708,11 @@ nav.type {
 @media screen and (max-width:959px){
 	.fork {
 		display: none;
+	}
+
+	#disqus_thread {
+		width: 90%;
+		padding: 5%;
 	}
 }
 

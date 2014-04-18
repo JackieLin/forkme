@@ -98,6 +98,12 @@ $(function() {
 		});
 	};
 	// 调用
-		prettyPrint();
+	prettyPrint();
+	/**
+	 *  media query
+	 */
+	var viewportWidth = document.documentElement.clientWidth;
+	if(viewportWidth >= 959) {
 		menu();
+	}
 });
