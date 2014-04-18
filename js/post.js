@@ -105,5 +105,16 @@ $(function() {
 	var viewportWidth = document.documentElement.clientWidth;
 	if(viewportWidth >= 959) {
 		menu();
+	} else {
+		// mobie点击显示导航栏
+		var viewportWidth = document.documentElement.clientWidth;
+		if(viewportWidth < 959) {
+
+			var mobieTopUl = $('.mobie-top-ul');
+			$('.navbar-toggle').click(function() {
+				var isShow = mobieTopUl.css('display');
+				(isShow === 'none') ? mobieTopUl.slideDown() : mobieTopUl.slideUp();
+			});
+		}
 	}
 });

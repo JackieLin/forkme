@@ -16,6 +16,17 @@ $(function () {
 		$('body, html').animate({scrollTop: 0}, 800);
 	});
 	
+	// mobie点击显示导航栏
+	var viewportWidth = document.documentElement.clientWidth;
+	if(viewportWidth < 959) {
+
+		var mobieTopUl = $('.mobie-top-ul');
+		$('.navbar-toggle').click(function() {
+			var isShow = mobieTopUl.css('display');
+			(isShow === 'none') ? mobieTopUl.slideDown() : mobieTopUl.slideUp();
+		});
+	}
+
 	// 显示评论次数
 	 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'jackielin'; // required: replace example with your forum shortname
@@ -136,6 +147,7 @@ $(function () {
 		window.dates = dates;
 		window.excerpts = excerpts;
 	};
+
 	prettyPrint();
 	aside();	
 });
