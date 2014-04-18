@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 持续构建工具--Travis-cli
+title: 构建工具系列一--Travis-cli
 description: <strong>摘要:</strong> Travis-cli是一个在线的, 分布式的持续集成服务, 用来构建和测试在Github上拖管的代码......<a href="/continuous-integration-tool-travis-cli" title="阅读全文">阅读全文</a>
 tags: 前端开发
 excerpt: github Travis-cli

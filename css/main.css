@@ -212,6 +212,7 @@ audio, canvas, video {
 .navbar-toggle {
 	margin: 0 auto;
 	margin-top: 10px;
+	margin-left: 32%;    /**兼容UC浏览器**/
 	display: none;
 	position: relative;
 	background-color: transparent;
@@ -378,9 +379,15 @@ ul.mobie-top-ul li a:hover {
 @media screen and (max-width:959px) {
 	#container > div > section {
 		width: 100%;
+		float: none;
 	}
 	
 	#container > div > aside {
+		width: 100%;
+		float: none;
+	}
+
+	#container > div > aside section.aside_sec {
 		display: none;
 	}
 
@@ -488,6 +495,12 @@ footer > div a {
 		font-size: 0.7em;
 		color: #000;
 		line-height: 1.8em;
+	}
+	/** 前进后退 **/
+	.post {
+		position: static;
+		width: 100%;
+		font-size: 0.9em;
 	}
 }
 
