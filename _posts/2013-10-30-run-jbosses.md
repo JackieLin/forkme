@@ -15,6 +15,8 @@ excerpt: jboss
 
 对重要性的介绍就到这里, 对jboss服务器进一步了解可以点击[这里](http://www.jboss.org/developer/tutorials.html)
 
+本文地址: [http://forkme.info/run-jbosses/][]或者[http://www.cnblogs.com/blackmanba/p/3674301.html][], 转载请注明源地址。
+
 ## jboss server配置
 解决这个问题的关键其实就是对于不同的实例分配不同的端口。
 
@@ -92,3 +94,5 @@ http服务端口默认情况下是8080, 其他实例的端口依次在8080的基
 * 在同一台机器上部署基于不同JVM的jboss
 
 [Binding-Manager]:    http://docs.jboss.org/jbossas/docs/Server_Configuration_Guide/4/html/Additional_Services-Services_Binding_Management.html  "Bind-Manager"
+[http://forkme.info/run-jbosses/]: http://forkme.info/run-jbosses/
+[http://www.cnblogs.com/blackmanba/p/3674301.html]: http://www.cnblogs.com/blackmanba/p/3674301.html
