@@ -13,7 +13,7 @@ $(function() {
 	 * @type {[type]}
 	 */
 	var $g_wrap = $('.wrap'),
-		g_pagestr = ['index', 'about', 'work'],
+		g_pagestr = ['index', 'about', 'work', 'ability', 'contract'],
 		$g_page = [],
 		g_step = 10,
 		g_pagetop = $(document).height();

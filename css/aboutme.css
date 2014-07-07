@@ -15,20 +15,21 @@ html, body, .page, .wrap {
 .page1 {
 	top: 0%;
 	background-image: url("../images/star.jpg");
-	background-size: 100% auto;
+	background-size: 100% 99.8%;
+	background-repeat:no-repeat;
 	opacity: 0.8;
 }
 .page2 {
 	top:100%;
 }
 .page3 {
-	top: 200%;
+	top: 199%;
 }
 .page4 {
-	top: 300%;
+	top: 298%;
 }
-.pahe5 {
-	top: 400%;
+.page5 {
+	top: 396%;
 }
 .wrap>nav {
 	width: 100%;
@@ -74,7 +75,7 @@ html, body, .page, .wrap {
 	float: left;
 }
 
-#about header {
+#about header,  #ability header, #contract header{
 	font-size: 2em;
 	font-weight: bold;
 	margin-top: 10%;
@@ -82,9 +83,10 @@ html, body, .page, .wrap {
 }
 .build {
 	background-image: url('../images/build.jpeg');
+	background-size: 100% auto;
 	z-index: -1;
 }
-#about li {
+#about li, #ability li, #contract li{
 	margin-left: 10%;
 	margin-top: 5%;
 	font-size: 1.3em;
@@ -95,14 +97,44 @@ html, body, .page, .wrap {
 	overflow: hidden;
 	height: 100%;
 }
+#work {
+	background-color: rgb(39,174,96);
+}
 #work ul {
 	height: 100%;
 }
 #work ul li {
 	float: left;
 	margin-left: 20px;
+	color: #fff;
 	width: 30%;
 	height: 20%;
 	margin-top: 30px;
 	border: 2px solid #000;
+}
+#work li a {
+	color: #000;
+}
+
+#ability {
+	background-color: rgb(36,114,164);
+}
+#ability li {
+	margin-top: 2%;
+}
+#contract {
+	background-color: rgb(192,45,43);
+}
+#contract li {
+	margin-top: 2%;
+}
+#contract header.statement {
+	margin-top: 3%;
+}
+#contract p {
+	margin-top: 2%;
+	margin-left: 10%;
+}
+#contract a{
+	color: rgb(230,230,230);
 }
