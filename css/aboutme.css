@@ -94,7 +94,7 @@ html, body, .page, .wrap {
 	margin-left: 10%;
 }
 .build {
-	background-image: url('../images/build.jpeg');
+	background-image: url('../images/build.jpg');
 	background-size: 100% auto;
 	z-index: -1;
 }
