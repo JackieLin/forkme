@@ -23,13 +23,13 @@ html, body, .page, .wrap {
 	top:99.9%;
 }
 .page3 {
-	top: 199%;
+	top: 198%;
 }
 .page4 {
-	top: 298%;
+	top: 296%;
 }
 .page5 {
-	top: 396%;
+	top: 395%;
 }
 .contentTransition {
 	-webkit-transition: top .8s ease-in;

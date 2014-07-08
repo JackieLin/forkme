@@ -15,7 +15,7 @@ $(function() {
 	var g_wrap = $('.wrap')[0],
 		g_pagestr = ['index', 'about', 'work', 'ability', 'contract'],
 		$g_page = [],
-		g_step = 10,
+		g_step = 20,
 		g_onepagetop = $(document).height(),
 		$g_nav = $('#nav');
 
@@ -77,24 +77,14 @@ $(function() {
 			$t.addClass('contentTransition');
 			$t.css('top', distance + '%');
 		};
-	};
-
+	},
 	/**
-	 * init function
+	 * To handler the page event
+	 * @param  {[type]} event [description]
+	 * @return {[type]}       [description]
 	 */
-	(function() {
-		for (var i = 0, length = g_pagestr.length; i < length; i++) {
-			var t = g_pagestr[i];
-			$g_page.push($('#' + t));
-		}
-		$g_nav.children().children().bind('click', navigation);
-	})();
-
-	/**
-	 * binding wrap scroll event
-	 */
-	bind_mousewheel(g_wrap, function(event) {
-		var delta = event.delta,
+	pageEventHandler = function(event) {
+		var delta = event.delta ||　-1,
 			length = $g_page.length,
 			firstPageTop = parseFloat($g_page[0].css('top').replace('px', '')),
 			lastPageTop = parseFloat($g_page[length - 1].css('top').replace('px', ''));
@@ -122,6 +112,41 @@ $(function() {
 			}
 			$t.removeClass('contentTransition');
 			$t.css('top', top);
+		}
+	};
+
+	/**
+	 * init function
+	 */
+	(function() {
+		for (var i = 0, length = g_pagestr.length; i < length; i++) {
+			var t = g_pagestr[i];
+			$g_page.push($('#' + t));
+		}
+		$g_nav.children().children().bind('click', navigation);
+	})();
+
+	/**
+	 * binding wrap scroll event
+	 */
+	bind_mousewheel(g_wrap, pageEventHandler);
+	/**
+	 * binding keypress event
+	 */
+	$(document).keydown(function(event) {
+		var keycode = event.keyCode || 40;
+		
+		switch(keycode) {
+			case 40:
+				event.delta = -1;
+				pageEventHandler.call(this, event);
+				break;
+			case 38:
+				event.delta = 1;
+				pageEventHandler.call(this, event);
+				break;
+			default:
+				break;
 		}
 	});
 });
