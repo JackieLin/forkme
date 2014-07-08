@@ -10,13 +10,14 @@ $(function() {
 	 * $g_page page element jquery object
 	 * g_step animation step
 	 * g_pagetop one page top
-	 * @type {[type]}
+	 * $g_nav navigation
 	 */
 	var g_wrap = $('.wrap')[0],
 		g_pagestr = ['index', 'about', 'work', 'ability', 'contract'],
 		$g_page = [],
 		g_step = 10,
-		g_pagetop = $(document).height();
+		g_onepagetop = $(document).height(),
+		$g_nav = $('#nav');
 
 	/**
 	 * bind mouse wheel event
@@ -58,6 +59,24 @@ $(function() {
                 callback.call(obj, _eventCompat(event));
 			});
 		}
+	},
+	/**
+	 * navigation bar bind click events
+	 * @return {[type]} [description]
+	 */
+	navigation = function(event) {
+		if($g_nav === []) {
+			return;
+		}
+		var target = event.target || event.srcElement, 
+		      $target = $(target), 
+		      index = $target.parent().index();
+		for (var i = 0; i < $g_page.length; i++) {
+			var $t = $g_page[i],
+			      distance = (i - index) * 100;
+			$t.addClass('contentTransition');
+			$t.css('top', distance + '%');
+		};
 	};
 
 	/**
@@ -68,6 +87,7 @@ $(function() {
 			var t = g_pagestr[i];
 			$g_page.push($('#' + t));
 		}
+		$g_nav.children().children().bind('click', navigation);
 	})();
 
 	/**
@@ -100,7 +120,7 @@ $(function() {
 			} else if(delta >= 1) {
 				top = (Math.abs(top + g_step) < g_step) ? 0 : top + g_step;
 			}
-			
+			$t.removeClass('contentTransition');
 			$t.css('top', top);
 		}
 	});

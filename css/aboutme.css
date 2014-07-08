@@ -20,7 +20,7 @@ html, body, .page, .wrap {
 	opacity: 0.8;
 }
 .page2 {
-	top:100%;
+	top:99.9%;
 }
 .page3 {
 	top: 199%;
@@ -30,6 +30,10 @@ html, body, .page, .wrap {
 }
 .page5 {
 	top: 396%;
+}
+.contentTransition {
+	-webkit-transition: top .8s ease-in;
+	transition: top .8s ease-in;
 }
 .wrap > nav {
 	width: 100%;
@@ -49,7 +53,10 @@ html, body, .page, .wrap {
 	font-weight: bold;
 	color: rgb(230,230,230);
 	width: 15%;
-	margin-left: 10%;
+	margin-left: 5%;
+}
+.wrap > nav ul li>a:hover{
+	color: #fff;
 }
 .description img {
 	border-radius: 50% 50%;
@@ -70,7 +77,6 @@ html, body, .page, .wrap {
 .description > p:first-of-type {
 	margin-top: 100px;
 }
-
 #about section {
 	overflow: hidden;
 }
@@ -78,6 +84,7 @@ html, body, .page, .wrap {
 	width: 40%;
 	height: 100%;
 	float: left;
+	position: relative;
 }
 
 #about header,  #ability header, #contract header{
