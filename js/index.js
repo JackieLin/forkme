@@ -57,7 +57,7 @@ $(function () {
 		// 存放对应日期序号
 		dateSeq = [], dateShow = ['Jan', 'Feb', 'Mar', 'Apirl', 'May', 'June', 'July', 'Aug', 'Sep',
 		'Oct', 'Nov', 'Dec'], flag = 0, tagsSeq = [], archives = $('.archives > nav > ul'), categories = $('.categories > nav > ul'),
-		origin = window.location.origin;
+		origin = window.location.href;
 
 		// 赋值
 		tagsSeq['我的生活'] = 0;
