@@ -5,6 +5,8 @@ description: <strong>摘要:</strong> 最近一段时间，随着数据的不停
 tags: 后台开发
 excerpt: oracle
 ---
+本文地址: [http://forkme.info/move-oracle-database](http://forkme.info/move-oracle-database)或者[http://www.cnblogs.com/blackmanba/p/move-oracle-database.html](http://www.cnblogs.com/blackmanba/p/move-oracle-database.html), 转载请注明源地址。
+
 最近一段时间，随着数据的不停累积，之前的oracle数据库所在的硬盘已经不能容纳越来越多的数据以及日志信息。发生这种情况的原因是安装时对数据库的大小估算不够(⊙﹏⊙b汗)。既然出了这种问题就要想方法解决。最后的做法其实就是最简单的想法，将oracle数据库迁移到更大的硬盘就行了呗！确实如此。但所谓知易行难，真正实施起来的时候才发现迁移过程中出现了很多问题。以下文章就是记录我在迁移过程中遇到的各种问题以及解决办法。
 
 ## 原因

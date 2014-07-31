@@ -5,6 +5,7 @@ description:	<strong>摘要:</strong>  重排, 顾名思义就是重新排版的
 tags:	前端开发
 excerpt: Browsers Render,Web Performance
 ---
+本文地址: [http://forkme.info/browser-repaint-reflow/](http://forkme.info/browser-repaint-reflow/)或者[http://www.cnblogs.com/blackmanba/p/browser-repaint-reflow.html](http://www.cnblogs.com/blackmanba/p/browser-repaint-reflow.html), 转载请注明源地址。
 
 ## 概述
 重排, 顾名思义就是重新排版的意思; 重绘, 就是浏览器重新绘制。理解重排和重绘的含义十分重要, 因为在评审页面交互效果的时候, 重绘和重排是必须考虑的因素。并不是说交互效果实现了就可以了, 必须同时考虑到这样做会引发什么性能问题。也就是说, 浏览器在进行重绘和重排的时候是要付出高昂的性能代价的。

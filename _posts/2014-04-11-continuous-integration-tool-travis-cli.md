@@ -5,6 +5,8 @@ description: <strong>摘要:</strong> Travis-cli是一个在线的, 分布式的
 tags: 前端开发
 excerpt: github Travis-cli
 ---
+本文地址: [http://forkme.info/continuous-integration-tool-travis-cli/](http://forkme.info/continuous-integration-tool-travis-cli/)或者[http://www.cnblogs.com/blackmanba/p/continuous-integration-tool-travis-cli.html](http://www.cnblogs.com/blackmanba/p/continuous-integration-tool-travis-cli.html), 转载请注明源地址。
+
 ##概述
 [Travis-cli]()是一个在线的, 分布式的持续集成服务, 用来构建和测试在[Github][]上拖管的代码。wikipedia上定义如下：
 

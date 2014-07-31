@@ -5,6 +5,8 @@ description: <strong>摘要:</strong> 其实已经有一段时间没有更新过
 tags: 我的生活
 excerpt: 总结
 ---
+本文地址: [http://forkme.info/change-a-new-environment](http://forkme.info/change-a-new-environment)或者[http://www.cnblogs.com/blackmanba/p/3880404.html](http://www.cnblogs.com/blackmanba/p/3880404.html), 转载请注明源地址。
+
 ## 概述
 其实已经有一段时间没有更新过博客了, 不知道为什么, 就是没有心情去写。o(^▽^)o, 想起前人的告诫: 
 
@@ -12,6 +14,8 @@ excerpt: 总结
 
 就感觉很汗颜( ╯□╰ )。弹指一挥间这个博客也已经开通一年了，但产出的文章却远远达不到自己的要求。当然，随着这一年后端工作的积累，我也学到了很多。但终究觉得自己的兴趣点在前端这一块（好吧，你的兴趣也太广泛了一点(-｡-;)）。所以，经过一段痛并快乐的时光之后，我只能暂时放弃都对后端的继续深入，只把它作为自己的兴趣爱好，而转而深入前端的学习，为此换了工作，成为了苦逼的前端工程师的一员......  
 好吧，前面啰啰嗦嗦了一大堆，其实都是自己的吐（he）槽（he）罢鸟。接下来才是这篇文章的主题（尼玛，现在才说重点）。那就是对我这一年来工作的总结和对自己的展望以及和本人的一点想法吧！
+
+**本文地址: [http://forkme.info/change-a-new-environment]()或者[http://www.cnblogs.com/blackmanba/p/3880404.html](http://www.cnblogs.com/blackmanba/p/3880404.html), 转载请注明源地址。**
 
 ## 总结
 总结，书面的意思即是：
@@ -44,3 +48,5 @@ excerpt: 总结
 最后，以一句话作为本文的总结：
 
 > *Nothing is impossible for a willing heart.*
+
+[http://forkme.info/change-a-new-environment]:    http://forkme.info/change-a-new-environment

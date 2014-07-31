@@ -5,6 +5,7 @@ description: <strong>摘要:</strong> Node.js是一个是一个构建在Chrome's
 tags: 后台开发
 excerpt: IE8,Node.js
 ---
+本文地址: [http://forkme.info/solve-socketIO-IE8-emit-disconnect-too-long/](http://forkme.info/solve-socketIO-IE8-emit-disconnect-too-long/)或者[http://www.cnblogs.com/blackmanba/p/solve-socketIO-IE8-emit-disconnect-too-long.html](http://www.cnblogs.com/blackmanba/p/solve-socketIO-IE8-emit-disconnect-too-long.html), 转载请注明源地址。
 
 ##概述
 [Node.js](http://nodejs.org/)是一个是一个构建在[Chrome's JavaScript runtime](https://code.google.com/p/v8/)上的应用程序。能够容易的建立起快速, 可扩展性的应用。Node.js采用事件驱动, 无阻塞I/O模型来保证其轻量性和有效性。对于Javascript语言来说, Node.js的出现具有相当重要的意义。它意味着Javascript不再是传统意义上只能用于前端开发的语言, Javascript同时也能用于WEB后端程序的开发。Node.js相当于一座桥梁, 通过它可以打通前端与后端开发, 现在通过使用Javascript就能实现功能完备的网站。

@@ -8,6 +8,8 @@ excerpt:	Web Performance,Chrome DevTools
 
 ->译文，原文在[这里][]<-
 
+本文地址: [http://forkme.info/web-perfomance-with-Chrome-DevTools/](http://forkme.info/web-perfomance-with-Chrome-DevTools/)或者[http://www.cnblogs.com/blackmanba/p/web-perfomance-with-Chrome-DevTools.html](http://www.cnblogs.com/blackmanba/p/web-perfomance-with-Chrome-DevTools.html), 转载请注明源地址。
+
 ![Git Bash](/images/ChromeDevTools/webapp1.jpg)
 
 我们都希望能建立高性能的Web应用。尤其是随着应用复杂度的不断提升，我们可能需要在浏览器每秒60帧的情况下支持丰富的动画效果，并保持网站的响应性和敏捷性。

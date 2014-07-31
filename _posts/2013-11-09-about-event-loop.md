@@ -5,6 +5,8 @@ description: <strong>摘要:</strong> 事件处理模型, 也即是全异步事�
 tags: 前端开发,后台开发
 excerpt: Event loop,Asynchronous
 ---
+本文地址: [http://forkme.info/about-event-loop/](http://forkme.info/about-event-loop/)或者[http://www.cnblogs.com/blackmanba/p/3676636.html](http://www.cnblogs.com/blackmanba/p/3676636.html), 转载请注明源地址。
+
 ## 概述
 事件处理模型, 也即是全异步事件处理模型。在以前, 对于那些同时执行多项任务, 但仍能响应用户交互的应用程序通常需要实施一种使用多进程(如linux的[fork][]操作)或者多线程的操作。对于低并发的环境, 这样做无疑能避免进程因等待某个操作而出现"假死"现象。但对于更复杂的异步应用程序或者是要求高并发的环境, 就要使用事件模型来处理异步事件, 这样做有很多好处:
 

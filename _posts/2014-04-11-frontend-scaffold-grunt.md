@@ -5,6 +5,8 @@ description: <strong>摘要:</strong> 最近在做Toki项目时遇到一个苦�
 tags: 前端开发
 excerpt: node.js grunt
 ---
+本文地址: [http://forkme.info/frontend-scaffold-grunt/](http://forkme.info/frontend-scaffold-grunt/)或者[http://www.cnblogs.com/blackmanba/p/frontend-scaffold-grunt.html](http://www.cnblogs.com/blackmanba/p/frontend-scaffold-grunt.html), 转载请注明源地址。
+
 ## 概述
 最近在做[Toki][]项目时遇到一个苦逼问题, 就是每次调试的时候需要将Javascript和css同时压缩(因为发布的成品代码是经过压缩的)。寻寻觅觅, 终于让我找到一款前端构建神器--[Grunt][]。Grunt是什么呢？ 正如官网定义的:
 
