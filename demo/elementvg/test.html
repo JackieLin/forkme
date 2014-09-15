@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>元素垂直显示</title>
+</head>
+<body>
+	<style>
+		.bggray {
+		    background-color: #f4f8fe;
+		    zoom: 1;
+		}
+		.overflow-hidden {
+		    overflow: hidden;
+		}
+		.w60p {
+		    width: 60%;
+		}
+		.lg{
+		    font-size: 18px;
+		    font-weight: bold;
+		    line-height: 80px; /* 注意：line-height和容器的高度一致 */
+		}
+		.inline-block {
+		    display: inline-block;
+		    *display: inline;
+		    zoom: 1;
+		    vertical-align: middle;
+		}
+		.verticalmiddle {
+		    vertical-align: middle;
+		}
+	</style>
+	<h2 id="inline-height">1. 采用inline-height 方法</h2>
+	<div class="model-main overflow-hidden bggray">
+		<div href="#" class="lg inline-block w60p verticalmiddle">盛松成：中国信贷结构继续改善</div>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+	
+	<h2 id="inline-height_mul">采用inline-height 方法（多字）</h2>
+	<div class="model-main overflow-hidden bggray">
+		<div href="#" class="lg inline-block w60p verticalmiddle">盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善</div>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+
+	<style>
+		.bggray {
+		    background-color: blue;
+		    position: relative;
+		    zoom:1;
+		}
+		.overflow-hidden {
+		    overflow: hidden;
+		}
+		.test {
+		    font-size: 18px;
+		    font-weight: bold;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    right: 0;
+		    left: 0;
+		    margin: auto;
+		    height: 20%;
+		}
+		.fn {
+		    float: right;
+		}
+	</style>
+	<h2 id="absm">2. 采用absolute+margin:auto(少字)</h2>
+	<div class="model-main overflow-hidden bggray">
+		<div class="abs inline-block w60p verticalmiddle">盛松成：中国信贷结构继续改善</div>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+
+	<h2 id="absm-mul">采用absolute+margin:auto(多字)</h2>
+	<div class="model-main overflow-hidden bggray">
+		<div class="abs inline-block w60p verticalmiddle">
+			盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善
+		</div>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+	<style>
+		.bggray {
+		    background-color: #f4f8fe;
+		    overflow: hidden;
+		}
+		.verticalmiddle {
+			vertical-align: middle;
+		}
+
+		.cell {
+		    display: table-cell;height: 80px;
+		}
+
+		.r {
+		    float: right;
+		}
+	</style>
+	<h2 id="cell">3. 采用display: table-cell(少字)</h2>
+
+	<div class="model-main overflow-hidden bggray">
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin r">
+		<div class="w60p verticalmiddle cell">盛松成：中国信贷结构继续改善</div>
+	</div>
+
+	<h2 id="cell-mul">采用display: table-cell(多字)</h2>
+
+	<div class="model-main overflow-hidden bggray">
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin r">
+		<div class="w60p verticalmiddle cell">
+			盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善
+		</div>
+	</div>
+	<style>
+		.bggray {
+		    background-color: #f4f8fe;
+		}
+		.overflow-hidden {
+		    overflow: hidden;
+		}
+		.w80p {
+		    width: 80%;
+		}
+		a {
+		    font-size: 18px;
+		    font-weight: bold;
+		}
+		.inline-block {
+		    display: inline-block;
+		    *display: inline;
+		    zoom: 1;
+		    vertical-align: middle;
+		}
+		.verticalmiddle {
+		    vertical-align: middle;
+		}
+		.nomargin {
+		    margin: 0px;
+		}
+	</style>
+
+	<h2 id="inlineblock">4. 采用inline-block 方法(少字)</h2>
+	<!-- 垂直居中对齐  采用inline-block 方法-->
+	<div class="model-main overflow-hidden bggray">
+		<a href="#" class="inline-block w80p verticalmiddle">盛松成：中国信贷结构继续改善</a>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+	<h2 id="inlineblock-mul">4. 采用inline-block 方法(多字)</h2>
+	<div class="model-main overflow-hidden bggray">
+		<a href="#" class="inline-block w80p verticalmiddle">
+			盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善
+		</a>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="nomargin verticalmiddle"></div>
+	<style>
+		button {
+		    height: 200px;
+		}
+		.overflow-hidden {
+		    overflow: hidden;
+		}
+		.w60p {
+		    width: 60%;
+		}
+		a {
+		    font-size: 18px;
+		    font-weight: bold;
+		    line-height: 20px;
+		}
+		.verticalmiddle {
+		    vertical-align: middle;
+		}
+		.fn {
+		    float: none;
+		}
+		.nomargin {
+		    margin: 0px;
+		}
+	</style>
+	<h2 id="button">5. 采用button 方法(少字)</h2>
+	<!-- 利用button的默认属性实现居中 -->
+	<button>
+		<a href="#" class="inline-block w60p verticalmiddle" style="text-align: left;">盛松成：中国信贷结构继续改善</a>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="fn nomargin verticalmiddle">
+	</button>
+
+	<h2 id="button_mul">采用button 方法(多字)</h2>
+	<!-- 利用button的默认属性实现居中 -->
+	<button>
+		<a href="#" class="inline-block w60p verticalmiddle" style="text-align: left;">盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善盛松成：中国信贷结构继续改善</a>
+
+		<img src="http://jsfiddle.qiniudn.com/news3.png" alt="news" class="fn nomargin verticalmiddle"></button>
+</body>
+</html>
