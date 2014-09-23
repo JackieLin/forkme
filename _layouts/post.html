@@ -1,44 +1,35 @@
 ---
 layout: main
 ---
-<!-- 具体文章模块 -->
-<section class="article">
-	<article>
-		<header>
-			<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor arti_title">{{ page.title }}</a>
-			<p class="sub_arti">{{ page.date | date:"%Y-%m-%d" }}</p>
-		</header>
-		<!-- 设置class来实现正文的标签格式化 -->
-		<section class="entry">
-			{{ content }}
-		</section>
-		<p class="sub_arti">  
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .-~~\       <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ _    <br />
-		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x&nbsp;&nbsp;&nbsp;.-~_)   <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x".-~       <br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( /  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<span>→ Post by {{ site.author.name }}</span>
-		</p>
-		<footer class="lisence">（转载本站文章请注明作者和出处 <a href="http://forkme.info">forkme.info</a> ，请勿用于任何商业用途）</footer>
-	</article>
+<section class="l">
+	<!-- 具体文章模块 -->
+	<section class="article">
+		<article>
+			<header>
+				<a href="{{ page.url }}" title="{{ page.title }}" class="changecolor arti_title">{{ page.title }}</a>
+				<p class="sub_arti">{{ page.date | date:"%Y-%m-%d" }}</p>
+			</header>
+			<!-- 设置class来实现正文的标签格式化 -->
+			<section class="entry">
+				{{ content }}
+			</section>
+			<p class="sub_arti">  
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .-~~\       <br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ _    <br />
+			    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x&nbsp;&nbsp;&nbsp;.-~_)   <br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~x".-~       <br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( /  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>→ Post by {{ site.author.name }}</span>
+			</p>
+			<footer class="lisence">（转载本站文章请注明作者和出处 <a href="http://forkme.info">forkme.info</a> ，请勿用于任何商业用途）</footer>
+		</article>
+	</section>
+	<div class="comment"></div>
+	<!-- 添加评论 -->
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="/js/prettify/prettify.js"></script>
+	<script type="text/javascript" src="/js/post.js"></script>
+
+	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </section>
-<div class="comment"></div>
-<!-- 添加评论 -->
-<div id="disqus_thread"></div>
-<script type="text/javascript" src="/js/prettify/prettify.js"></script>
-<script type="text/javascript" src="/js/post.js"></script>
-
-<!-- 添加分享图标 -->
-
-<!-- Baidu Button BEGIN -->
-<!-- <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=5&amp;pos=left&amp;uid=6886522"></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-var bds_config={"bdTop":221};
-document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
-</script> -->
-<!-- Baidu Button END -->
-
-<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>

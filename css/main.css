@@ -39,6 +39,10 @@ blockquote {
     color: #0099cc;
 }
 
+.l {
+	float: left;
+}
+
 /** change the pointer style **/
 html {
 	cursor: url("../images/pencil.png"),auto;
@@ -533,16 +537,26 @@ footer > div a {
     text-decoration: underline;
 }
 
+.sidemenu {
+	position: relative;
+}
+
 /** 文章边栏处理 **/
 .menulist {
-	position: fixed;
-	top: 30%;
-	right: 11%;
-	max-height: 500px;
-	width: 300px;
-	overflow: scroll;
+	background-color: #c5ccdd;
+	padding: 5% 0 5% 10%;
+	width: 100%;
+	line-height: 2;
 	/*white-space: nowrap;*/
 	/*text-overflow: ellipsis;*/ 
+}
+
+.menulist_pf {
+	position: fixed;
+	top: 1%;
+	left: 66.5%;
+	width: 21%;
+	padding: 1.2% 0 1.2% 2.4%;
 }
 
 .menulist a {

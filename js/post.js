@@ -41,7 +41,7 @@ $(function() {
 	/*加载菜单*/
 	var menu = function () {
 		// init
-		var h2 = [], h3 = [], h2index = 0, list = '<aside><nav class="menulist"><ul>', menulist = null;
+		var h2 = [], h3 = [], h2index = 0, list = '<aside class="sidemenu"><nav class="menulist"><ul>', menulist = null;
 		$.each($("h2,h3",$('.article')), function (index, entry) {
 			/* 处理h2 */
 			if(entry.tagName.toLowerCase() === 'h2') {
@@ -83,7 +83,9 @@ $(function() {
 		$('.main_content').append(list);
 		
 		// 获取列表项
-		menulist = $('.menulist');
+		menulist = $('.menulist'),
+		menulistScrollTop = menulist.offset().top,
+		g_window = $(window);
 		
 		// DOM操作，添加到文件中
 		// 采用事件委托机制来实现事件
@@ -95,6 +97,13 @@ $(function() {
 			var scroll = $(this).attr('data-top') || $('#' + $(this).attr('data-id')).offset().top;
 			console.log(scroll);
 			$('body,html').animate({scrollTop: scroll - 30}, 400, 'swing');
+		});
+
+		// window 滚动事件
+		$(window).bind('scroll', function() {
+			var windowTop = g_window.scrollTop();
+			windowTop - menulistScrollTop > 0 ? 
+			menulist.addClass('menulist_pf') : menulist.removeClass('menulist_pf');
 		});
 	};
 	// 调用
