@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM 各个API测试</title>
+	<meta charset="UTF-8" />
+</head>
+<body>
+	<!-- 1.input date -->
+	<h3>1. 测试input date属性兼容情况</h3>
+	<input type="date" value="2014-01-03" id="date" />
+	<h3>2. 测试document activeElement 属性兼容情况</h3>
+
+</body>
+<script type="text/javascript">
+	// 1. input date
+	var date = document.getElementById('date');
+	alert('1: ' + date.type);
+	// 2. document.activeelement
+	alert('2: ' + document.activeElement);
+</script>
+</html>
