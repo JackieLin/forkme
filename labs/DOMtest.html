@@ -9,13 +9,33 @@
 	<h3>1. 测试input date属性兼容情况</h3>
 	<input type="date" value="2014-01-03" id="date" />
 	<h3>2. 测试document activeElement 属性兼容情况</h3>
-
+	<input type="text" id="activeElement">
+	<h3>3. 测试 document defaultView 属性兼容情况</h3>
+	<h3>4. 测试 dom nodeType 属性兼容情况</h3>
+	<h3>5. 测试 dom add 方法兼容情况</h3>
+	<select name="" id="5">
+		<option value="" id="5_sub">aaaa</option>
+	</select>
 </body>
 <script type="text/javascript">
 	// 1. input date
 	var date = document.getElementById('date');
 	alert('1: ' + date.type);
 	// 2. document.activeelement
-	alert('2: ' + document.activeElement);
+	var activeElement = document.getElementById('activeElement');
+	activeElement.onclick = function (argument) {
+		alert('2:' + document.activeElement.id);
+	}
+
+	alert('3:' + document.defaultView);
+	alert('4:' + activeElement.nodeType);
+
+	// 5. dom add function
+	var _5 = document.getElementById('5'),
+		_5_sub = document.getElementById('5_sub'),
+		_5_sub_clone = _5_sub.cloneNode(true),
+		_options = _5.options.length;
+		_5.add(_5_sub_clone, _options);
+
 </script>
 </html>
