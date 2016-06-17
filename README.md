@@ -2,7 +2,7 @@ forkme
 ==========
 这是我的个人博客，采用[github pages](http://pages.github.com/)、[Jelly](https://github.com/mojombo/jekyll)模版系统和[Disqus](http://disqus.com/)完成网站的编写，网址猛击[这里](http://forkme.info)
 
-实现功能
+实现功能   
 ==========
 
 * 文章归档
